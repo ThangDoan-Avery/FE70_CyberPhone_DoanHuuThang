@@ -1,0 +1,76 @@
+.products {
+  padding: 100px 0;
+  background-color: $white-2;
+  &__title {
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $primary-dark;
+    letter-spacing: 0.015rem;
+  }
+  &__content {
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: $white;
+      background-clip: border-box;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: 2px;
+    }
+    .cardPhone {
+      box-shadow: 6px 6px 12px $white-1, -6px -6px 12px $white;
+      background-color: $white-2;
+      border: none;
+      padding: 30px;
+      margin-bottom: 30px;
+      &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary-dark;
+        margin-bottom: 1.2rem;
+      }
+      &__text {
+        font-size: 14px;
+        font-weight: 400;
+        color: $primary-dark;
+        margin-bottom: 2rem;
+      }
+      &__rating {
+        color: #f9d412;
+      }
+      .card-img-top {
+        width: 100%;
+        border-top-left-radius: calc(2px - 1px);
+        border-top-right-radius: calc(2px - 1px);
+      }
+      img {
+        box-shadow: 6px 6px 12px $white-1, -6px -6px 12px $white;
+        border-radius: 8px;
+      }
+    }
+    .card-body {
+      padding: 1.5rem;
+      .btnPhone-shadow {
+        background: $white-2;
+        padding: 8px 20px;
+        border: none;
+        border-radius: 4px;
+        letter-spacing: 0.03rem;
+        font-size: 10px;
+        font-weight: 600;
+        color: $primary-main;
+        box-shadow: 2px 2px 4px $white-1, -2px -2px 4px $white;
+        transition: .5s;
+        &:hover {
+          box-shadow: inset 1px 1px 3px $white-1, inset -2px -2px 5px $white;
+        }
+      }
+    }
+  }
+}
+
+

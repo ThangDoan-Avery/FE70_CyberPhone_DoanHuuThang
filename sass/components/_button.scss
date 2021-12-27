@@ -1,0 +1,33 @@
+.btn {
+  padding: 13.5px 44px;
+  border-radius: 8px;
+  letter-spacing: 0.03rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.btn--outlined {
+  background: transparent;
+  color: $primary-main;
+  border: 1px solid $primary-main;
+  box-shadow: 0 3px 6px #c9d8f4;
+  &:hover {
+    background: $primary-main;
+    transition: all 0.5s;
+    color: $white;
+  }
+}
+
+.btn--contained {
+  background: linear-gradient(
+    120deg
+    ,$primary-light, $primary-main);
+  color: white;
+  border: 1px solid $primary-light;
+  &:hover {
+    opacity: 0.75;
+    transition: all 0.5s;
+  }
+}
