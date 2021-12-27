@@ -30,27 +30,47 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container container">
-          <div class="header__logo">
-            <a href="/"> CyberPhone </a>
-          </div>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item header__nav-item--active">
-                <a href="">Home</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="">About</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="">Shop</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="">Block</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="">Contact</a>
-              </li>
-            </ul>
+          <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+            <!-- Brand -->
+            <div class="header__logo">
+              <a href="/"> CyberPhone </a>
+            </div>
+
+            <!-- Toggler/collapsibe Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa fa-bars"></i>
+              </span>
+            </button>
+
+            <!-- Navbar links -->
+            <div
+              class="collapse header__nav navbar-collapse"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav header__nav-list text-center">
+                <li class="nav-item header__nav-item header__nav-item--active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item header__nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item header__nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item header__nav-item">
+                  <a class="nav-link" href="#">Block</a>
+                </li>
+                <li class="nav-item header__nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>

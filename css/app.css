@@ -204,16 +204,16 @@ html {
   z-index: 99;
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header__container button.navbar-toggler .navbar-toggler-icon {
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #1d365e;
+}
+
+.header__container .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
 }
 
 .header__container .header__logo a {

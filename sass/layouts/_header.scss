@@ -6,9 +6,16 @@
   padding: 10px;
   z-index: 99;
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .navbar {
+    }
+    button.navbar-toggler .navbar-toggler-icon {
+      font-size: 2rem;
+      line-height: 1.5em;
+      color: $primary-dark;
+    }
+    .navbar-collapse {
+      flex: 0;
+    }
     .header__logo {
       a {
         font-size: 2.5rem;
