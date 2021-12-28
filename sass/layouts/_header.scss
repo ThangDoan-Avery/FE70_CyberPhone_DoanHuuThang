@@ -13,7 +13,10 @@
       color: $primary-dark;
     }
     .navbar-collapse {
-      flex: 0;
+      flex: 0 !important;
+      @include Responsive(LG) {
+        flex-grow: 1 !important;
+      }
     }
     .header__logo {
       a {

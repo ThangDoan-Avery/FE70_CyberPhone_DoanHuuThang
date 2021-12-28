@@ -152,7 +152,6 @@ html {
 }
 
 .container {
-  max-width: 1140px;
   margin: 0px auto;
 }
 
@@ -252,9 +251,17 @@ html {
 }
 
 .header__container .navbar-collapse {
-  -webkit-box-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 !important;
+          flex: 0 !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .header__container .navbar-collapse {
+    -webkit-box-flex: 1 !important;
+        -ms-flex-positive: 1 !important;
+            flex-grow: 1 !important;
+  }
 }
 
 .header__container .header__logo a {
