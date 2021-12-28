@@ -1,12 +1,11 @@
 .header {
-  position: fixed;
-  width: 100%;
   background-color: $white-2;
   box-shadow: 0 2px 4px $white-1;
   padding: 10px;
   z-index: 99;
   &__container {
     .navbar {
+      padding: 0.5rem 0rem;
     }
     button.navbar-toggler .navbar-toggler-icon {
       font-size: 2rem;

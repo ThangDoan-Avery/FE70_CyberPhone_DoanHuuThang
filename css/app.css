@@ -146,6 +146,7 @@ html {
 }
 
 .wrapper {
+  position: relative;
   max-width: 1440px;
   margin: 0px auto;
 }
@@ -194,14 +195,54 @@ html {
   transition: all 0.5s;
 }
 
-.header {
+.sidebarMini {
   position: fixed;
-  width: 100%;
+  top: 25%;
+  right: 0;
+  z-index: 500;
+  width: 400px;
+  background-color: #2196f3;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-left: 1px solid #2196f3;
+  color: #fff;
+}
+
+.sidebarMini .is-opened {
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+}
+
+.sidebarMini .sidebarMini__button {
+  background: #2196f3;
+  padding: 8px 18px;
+  border: 1px solid #2196f3;
+  border-radius: 8px 0 0 8px;
+  letter-spacing: 0.015rem;
+  position: fixed;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #fff;
+}
+
+.sidebarMini .sidebarMini__button i {
+  font-size: 15px;
+}
+
+.header {
   background-color: #f5f9fe;
   -webkit-box-shadow: 0 2px 4px #e2ebfc;
           box-shadow: 0 2px 4px #e2ebfc;
   padding: 10px;
   z-index: 99;
+}
+
+.header__container .navbar {
+  padding: 0.5rem 0rem;
 }
 
 .header__container button.navbar-toggler .navbar-toggler-icon {
@@ -274,10 +315,16 @@ html {
 }
 
 .banner {
-  padding: 225px 0px;
+  padding: 220px 0px;
   background-image: url(../../images/product-header-bg.jpeg);
   background-size: cover;
   background-position: center bottom;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 150px 0px;
+  }
 }
 
 .banner .banner__container {
@@ -293,12 +340,13 @@ html {
   font-size: 7rem;
   font-weight: 700;
   color: #2a73dd;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 768px) {
   .banner .banner__container .banner__content .banner__title {
     font-size: 4rem;
+    margin-bottom: 10px;
   }
 }
 

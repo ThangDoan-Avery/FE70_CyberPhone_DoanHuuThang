@@ -1,8 +1,11 @@
 .banner {
-  padding: 225px 0px;
+  padding: 220px 0px;
   background-image: url(../../images/product-header-bg.jpeg);
   background-size: cover;
   background-position: center bottom;
+  @include Responsive(MD) {
+    padding: 150px 0px;
+  }
   .banner__container {
     display: flex;
     align-items: center;
@@ -11,9 +14,10 @@
         font-size: 7rem;
         font-weight: 700;
         color: $primary-main;
-        margin-bottom: 7px;
+        margin-bottom: 15px;
         @include Responsive(MD) {
           font-size: 4rem;
+          margin-bottom: 10px;
         }
       }
       .banner__sub-title {

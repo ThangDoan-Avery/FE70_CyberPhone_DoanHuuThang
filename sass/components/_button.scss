@@ -31,3 +31,33 @@
     transition: all 0.5s;
   }
 }
+
+.sidebarMini {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 500;
+  width: 400px;
+  background-color: $blue;
+  transform: translateX(100%);
+  transition: .5s;
+  border-left: 1px solid $blue;
+  color: #fff;
+  .is-opened {
+    transform: translateX(60%);
+  }
+  .sidebarMini__button {
+    background: $blue;
+    padding: 8px 18px;
+    border: 1px solid $blue;
+    border-radius: 8px 0 0 8px;
+    letter-spacing: 0.015rem;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: .5s;
+    color: #fff;
+    i {
+      font-size: 15px;
+    }
+  }
+}
