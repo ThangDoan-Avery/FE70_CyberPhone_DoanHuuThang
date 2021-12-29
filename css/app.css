@@ -209,11 +209,6 @@ html {
   color: #fff;
 }
 
-.sidebarMini .is-opened {
-  -webkit-transform: translateX(60%);
-          transform: translateX(60%);
-}
-
 .sidebarMini .sidebarMini__button {
   background: #2196f3;
   padding: 8px 18px;

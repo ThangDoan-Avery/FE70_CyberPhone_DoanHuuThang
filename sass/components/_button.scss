@@ -43,9 +43,6 @@
   transition: .5s;
   border-left: 1px solid $blue;
   color: #fff;
-  .is-opened {
-    transform: translateX(60%);
-  }
   .sidebarMini__button {
     background: $blue;
     padding: 8px 18px;
